@@ -1,0 +1,95 @@
+import tkinter as tk
+from tkinter import messagebox
+import os
+import shutil
+
+def create_file():
+    filename = filename_entry.get()
+    content = content_entry.get("1.0", tk.END).strip()
+    try:
+        with open(filename, "w") as file:
+            file.write(content)
+        messagebox.showinfo("Success", f"File '{filename}' created successfully.")
+    except Exception as e:
+        messagebox.showerror("Error", f"Error creating file: {e}")
+
+def delete_file():
+    filename = filename_entry.get()
+    try:
+        os.remove(filename)
+        messagebox.showinfo("Success", f"File '{filename}' deleted successfully.")
+    except FileNotFoundError:
+        messagebox.showerror("Error", f"File '{filename}' not found.")
+    except Exception as e:
+        messagebox.showerror("Error", f"Error deleting file: {e}")
+
+def rename_file():
+    old_name = oldname_entry.get()
+    new_name = newname_entry.get()
+    try:
+        os.rename(old_name, new_name)
+        messagebox.showinfo("Success", f"File '{old_name}' renamed to '{new_name}'.")
+    except FileNotFoundError:
+        messagebox.showerror("Error", f"File '{old_name}' not found.")
+    except Exception as e:
+        messagebox.showerror("Error", f"Error renaming file: {e}")
+
+def copy_file():
+    src = src_entry.get()
+    dest = dest_entry.get()
+    try:
+        shutil.copy(src, dest)
+        messagebox.showinfo("Success", f"File '{src}' copied to '{dest}'.")
+    except FileNotFoundError:
+        messagebox.showerror("Error", f"Source file '{src}' not found.")
+    except Exception as e:
+        messagebox.showerror("Error", f"Error copying file: {e}")
+
+def move_file():
+    src = src_entry.get()
+    dest = dest_entry.get()
+    try:
+        shutil.move(src, dest)
+        messagebox.showinfo("Success", f"File '{src}' moved to '{dest}'.")
+    except FileNotFoundError:
+        messagebox.showerror("Error", f"File '{src}' not found.")
+    except Exception as e:
+        messagebox.showerror("Error", f"Error moving file: {e}")
+
+root = tk.Tk()
+root.title("File Management System")
+
+tk.Label(root, text="Filename:").grid(row=0, column=0)
+filename_entry = tk.Entry(root)
+filename_entry.grid(row=0, column=1)
+
+tk.Label(root, text="Content:").grid(row=1, column=0)
+content_entry = tk.Text(root, height=5, width=30)
+content_entry.grid(row=1, column=1)
+
+tk.Button(root, text="Create File", command=create_file).grid(row=2, column=0, columnspan=2)
+
+tk.Button(root, text="Delete File", command=delete_file).grid(row=3, column=0, columnspan=2)
+
+tk.Label(root, text="Old Filename:").grid(row=4, column=0)
+oldname_entry = tk.Entry(root)
+oldname_entry.grid(row=4, column=1)
+
+tk.Label(root, text="New Filename:").grid(row=5, column=0)
+newname_entry = tk.Entry(root)
+newname_entry.grid(row=5, column=1)
+
+tk.Button(root, text="Rename File", command=rename_file).grid(row=6, column=0, columnspan=2)
+
+tk.Label(root, text="Source File:").grid(row=7, column=0)
+src_entry = tk.Entry(root)
+src_entry.grid(row=7, column=1)
+
+tk.Label(root, text="Destination File:").grid(row=8, column=0)
+dest_entry = tk.Entry(root)
+dest_entry.grid(row=8, column=1)
+
+tk.Button(root, text="Copy File", command=copy_file).grid(row=9, column=0, columnspan=2)
+tk.Button(root, text="Move File", command=move_file).grid(row=10, column=0, columnspan=2)
+
+root.mainloop()
