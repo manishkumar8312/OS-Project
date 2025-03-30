@@ -3,7 +3,7 @@
 ## 📌 Overview  
 The **Secure File Management System** is a robust and efficient solution designed to securely store, manage, and share files while ensuring data confidentiality, integrity, and accessibility. It incorporates encryption, authentication, and access control mechanisms to protect sensitive files from unauthorized access.  
 
-## Features  
+## Features 
 ✅ **Secure File Storage** – Encrypts files before storing them.  
 ✅ **User Authentication** – Ensures only authorized users can access files.  
 ✅ **Access Control** – Role-based permissions for file operations.  
