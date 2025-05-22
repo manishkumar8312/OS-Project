@@ -11,7 +11,7 @@ The **Secure File Management System** is a robust and efficient solution designe
 ✅ **Secure Sharing** – Encrypted file sharing with expiration options.  
 ✅ **Audit Logs** – Tracks all user actions for security monitoring.  
 
-## 🛠️ Technologies Used  
+## 🛠️ Technologies Used 
 - **Backend:** Python (Flask/Django) / Node.js  
 - **Frontend:** React / Angular / Vue  
 - **Database:** MySQL / PostgreSQL / MongoDB  
