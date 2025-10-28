@@ -55,5 +55,3 @@ python app.py  # Start backend
 This project is licensed under the **MIT License**.  
 
 ---
-
-Would you like to add anything specific, like API documentation or database schema details? 🚀
