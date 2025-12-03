@@ -1,57 +1,79 @@
-# 🔒 Secure File Management System  
-## 📌 Overview 
-The **Secure File Management System** is a robust and efficient solution designed to securely store, manage, and share files while ensuring data confidentiality, integrity, and accessibility. It incorporates encryption, authentication, and access control mechanisms to protect sensitive files from unauthorized access.  
+# Secure File Management System
 
+## Overview
 
-## Features 
-✅ **Secure File Storage** – Encrypts files before storing them.  
-✅ **User Authentication** – Ensures only authorized users can access files.  
-✅ **Access Control** – Role-based permissions for file operations.  
-✅ **File Versioning** – Keeps track of changes and allows rollback.  
-✅ **Secure Sharing** – Encrypted file sharing with expiration options.  
-✅ **Audit Logs** – Tracks all user actions for security monitoring.  
+The **Secure File Management System** is a robust and efficient solution designed to securely store, manage, and share files while ensuring data confidentiality, integrity, and accessibility. It integrates encryption, authentication, and access control mechanisms to prevent unauthorized access and protect sensitive information.
 
-## 🛠️ Technologies Used 
-- **Backend:** Python (Flask/Django) / Node.js  
-- **Frontend:** React / Angular / Vue  
-- **Database:** MySQL / PostgreSQL / MongoDB  
-- **Security:** AES/RSA Encryption, JWT Authentication  
+---
 
-## 🔐 Security Measures  
-🔹 **End-to-End Encryption** – Protects data at rest and in transit.  
-🔹 **Multi-Factor Authentication (MFA)** – Enhances account security.  
-🔹 **Role-Based Access Control (RBAC)** – Limits access to sensitive files.  
-🔹 **Secure API Endpoints** – Uses HTTPS, OAuth2, and token-based authentication.  
+## Features
 
-## 📂 How to Use  
-1️⃣ **Sign Up / Log In** – Create an account and authenticate yourself.  
-2️⃣ **Upload Files** – Securely upload your files.  
-3️⃣ **Manage Files** – Edit, delete, or share files with controlled access.  
-4️⃣ **Download Files** – Retrieve files with decryption when needed.  
+* **Secure File Storage** – Files are encrypted before being stored.
+* **User Authentication** – Only authorized users can access the system.
+* **Access Control** – Role-based permissions for file operations.
+* **File Versioning** – Tracks all changes and allows rollback to previous versions.
+* **Secure Sharing** – Encrypted file sharing with expiration settings.
+* **Audit Logs** – Logs all user actions for monitoring and security analysis.
 
-## 🏗️ Installation & Setup  
+---
+
+## Technologies Used
+
+* **Backend:** Python (Flask/Django) or Node.js
+* **Frontend:** React, Angular, or Vue
+* **Database:** MySQL, PostgreSQL, or MongoDB
+* **Security:** AES/RSA Encryption, JWT Authentication
+
+---
+
+## Security Measures
+
+* **End-to-End Encryption** – Secures data at rest and in transit.
+* **Multi-Factor Authentication (MFA)** – Enhances account protection.
+* **Role-Based Access Control (RBAC)** – Restricts access to sensitive content based on user roles.
+* **Secure API Endpoints** – Implements HTTPS, OAuth2, and token-based authentication for safe communication.
+
+---
+
+## How to Use
+
+1. **Sign Up / Log In** – Create an account and authenticate.
+2. **Upload Files** – Securely upload documents and media.
+3. **Manage Files** – Edit, delete, organize, or share files with controlled access.
+4. **Download Files** – Retrieve and decrypt files when needed.
+
+---
+
+## Installation & Setup
+
 ```bash
 # Clone the repository
 git clone https://github.com/your-repo/secure-file-management.git  
 
-# Navigate to project directory  
+# Navigate to the project directory
 cd secure-file-management  
 
-# Install dependencies  
-npm install  # For frontend  
-pip install -r requirements.txt  # For backend  
+# Install dependencies
+npm install                     # For the frontend  
+pip install -r requirements.txt # For the backend  
 
-# Start the application  
-npm start  # Start frontend  
-python app.py  # Start backend  
+# Start the application
+npm start        # Start frontend  
+python app.py    # Start backend  
 ```
 
-## 💡 Future Enhancements  
-- 🔍 **AI-based Threat Detection**  
-- 📦 **Cloud Storage Integration**  
-- 🏷 **Metadata Tagging for Better Organization**  
+---
 
-## 📜 License  
-This project is licensed under the **MIT License**.  
+## Future Enhancements
+
+* AI-based threat detection
+* Cloud storage integration
+* Metadata tagging for improved file organization
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.
 
 ---
